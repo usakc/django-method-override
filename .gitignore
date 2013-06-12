@@ -1,0 +1,7 @@
+.coverage
+*.egg-info
+*.pot
+*.py[co]
+dist/
+MANIFEST
+nosetests.xml
