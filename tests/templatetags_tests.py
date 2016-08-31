@@ -10,3 +10,7 @@ class TestTemplateTags(object):
         assert_equal(
             result, '<input type="hidden" name="_method" value="PUT">'
         )
+
+    def test_method_override_marked_safe(self):
+        result = method_override('PUT')
+        assert_true(hasattr(result, '__html__'))
