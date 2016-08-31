@@ -1,4 +1,9 @@
+# Project management
+tox>=2.3,<3
+bumpversion>=0.5,<1
+
+# Testing
 nose>=1.3.0
 coverage>=3.6
 mock>=1.0.1
-django>=1.5
+django>=1.9,<1.10

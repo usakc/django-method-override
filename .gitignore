@@ -3,5 +3,6 @@
 *.pot
 *.py[co]
 dist/
+.tox/
 MANIFEST
 nosetests.xml
