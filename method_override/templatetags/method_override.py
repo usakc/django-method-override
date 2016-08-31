@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from django.template import Library, Node, Variable
+from django.template import Library
 
 from method_override import settings
 
@@ -14,4 +14,6 @@ register = Library()
 @register.simple_tag
 def method_override(method):
     '''Renders a hidden input with the method override value.'''
-    return settings.INPUT_TEMPLATE.format(name=settings.PARAM_KEY, value=method)
+    return settings.INPUT_TEMPLATE.format(
+        name=settings.PARAM_KEY, value=method
+    )

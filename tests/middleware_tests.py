@@ -1,7 +1,7 @@
-from mock import *
-from nose.tools import *
+from mock import *  # NOQA
+from nose.tools import *  # NOQA
 
-from method_override.middleware import *
+from method_override.middleware import MethodOverrideMiddleware
 
 
 class TestMethodOverrideMiddleware(object):
